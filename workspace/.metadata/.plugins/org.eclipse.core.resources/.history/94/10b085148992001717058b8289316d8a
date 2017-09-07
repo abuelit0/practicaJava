@@ -1,0 +1,21 @@
+package com.beca.ejemplo;
+
+public class AlcanceDeVariables {
+	
+	static String name;
+	
+	public static void otherMethod(){
+		float salary = 15000.00f;
+	}
+	
+	public static void main(String[] args) {
+		
+		int age = 17;
+		
+		for(int ctr = 0;ctr < 5; ctr++){
+			
+		}
+		
+	}
+
+}

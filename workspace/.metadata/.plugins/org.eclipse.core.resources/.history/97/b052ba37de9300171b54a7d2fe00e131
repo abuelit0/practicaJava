@@ -1,0 +1,28 @@
+package com.beca.main;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import com.beca.ejemplos.Excepciones;
+import com.beca.ejemplos.Flujos;
+import com.beca.interfaz.Ejemplos;
+
+public class AppMain {
+	
+	private static HashMap<String, Ejemplos> _ejemplos = new HashMap<String, Ejemplos>();
+	
+	public static void main(String[] args) {
+		_iniciaEjemplos();
+		
+		_ejecutaEjemplo("Flujos");
+	}
+	
+	private static void _iniciaEjemplos(){
+		_ejemplos.put("Flujos", new Flujos());
+		_ejemplos.put("Excepciones", new Excepciones());
+	}
+	
+	private static void _ejecutaEjemplo(String key){
+		_ejemplos.get(key).ejemplo();;
+	}
+}

@@ -1,0 +1,32 @@
+package com.beca.exceptions;
+
+public class PruebaException extends Exception{
+
+	private int[] _datos = null;
+	
+	public PruebaException(String detalle) {
+		super(detalle);
+
+	}
+	
+	public PruebaException(String detalle, int []datos) {
+		super(detalle);
+		_datos = datos;
+	}
+	
+	@Override
+	public String getMessage() {
+		// TODO Auto-generated method stub
+		return super.getMessage() + _getDataDetails();
+	}
+	
+	private String _getDataDetails(){
+		String salida = _datos != null ? "\n" : "";
+		
+		for (int i : _datos) {
+			salida += i + "\t";
+		}
+		
+		return salida += "\n";
+	}
+}

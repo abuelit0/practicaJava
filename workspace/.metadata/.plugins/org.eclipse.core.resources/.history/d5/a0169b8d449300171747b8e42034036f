@@ -1,0 +1,13 @@
+package com.beca.ejemplos;
+
+import com.beca.interfaz.Ejemplos;
+
+public class Excepciones implements Ejemplos{
+
+	@Override
+	public void ejemplo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

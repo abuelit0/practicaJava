@@ -1,0 +1,14 @@
+package com.beca.main;
+
+import com.beca.interfaz.Ejemplos;
+import com.beca.metodos.PasoDeParametros;
+
+public class AppMain {
+
+	public static void main(String[] args) {
+		Ejemplos e = new Flujos();
+		
+		e.ejemplo();
+	}
+	
+}

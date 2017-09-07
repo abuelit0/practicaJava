@@ -1,0 +1,46 @@
+package com.beca.metodos;
+
+import com.beca.clasesAdicionales.MiObjeto;
+
+public class PasoDeParametros {
+
+	public static void ejemplo(){
+		
+		StringBuilder mensaje = new StringBuilder("Hola mundo");
+		MiObjeto objeto = new MiObjeto();
+		int valInt = 1;
+		
+		System.out.println("Ejemplo con StringBuilder:");
+		
+		System.out.println(mensaje);
+		_pruebaConString(mensaje);
+		System.out.println(mensaje);
+		
+		System.out.println("\nEjemplo con objetos:");
+		
+		System.out.println(objeto);
+		_metodoReferencia(objeto);
+		System.out.println(objeto);
+		
+		System.out.println("\nEjemplo con variables:");
+		
+		System.out.println("Valor original:\t" + valInt);
+		_metodoParametro(valInt);
+		System.out.println("Valor nuevo;\t" + valInt);
+	}
+	
+	private static void _metodoReferencia(MiObjeto m){
+		m.setValorCadena("Nuevo valor");
+		m.setValorEntero(10);
+	}
+	
+	private static void _metodoParametro(int valor){
+		valor = 0;
+	}
+	
+	private static void _pruebaConString(StringBuilder cadena){
+		//cadena = "Otra cosa";
+		cadena.replace(0, cadena.length(), "Nuevo mensaje");
+	}
+	
+}

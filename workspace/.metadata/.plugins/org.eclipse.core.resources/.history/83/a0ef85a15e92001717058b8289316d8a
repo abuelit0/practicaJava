@@ -1,0 +1,14 @@
+package com.accenture.holaMundo;
+
+/**
+ * @author Luis Guillermo Alvarez Jimenez
+ * 
+ * Imprime el mensaje de hola mundo.
+ * */
+
+public class HolaMundo {
+	
+	public static void main(String args[]){
+		System.out.println("Hola Mundo");
+	}
+}

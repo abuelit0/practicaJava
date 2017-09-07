@@ -1,0 +1,18 @@
+package com.beca.arreglos;
+
+public class Main {
+
+	public static void main(){
+		
+	}
+	
+	private static void _ejemplo1(){
+		int []scores;
+		
+		scores = new int[3];
+		
+		scores[0] = 10;
+		//scores[1] = 10;
+		scores[2] = 10;
+	}
+}

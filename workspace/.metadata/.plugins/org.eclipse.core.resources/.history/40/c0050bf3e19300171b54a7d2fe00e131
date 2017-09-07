@@ -1,0 +1,20 @@
+package com.beca.main;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import com.beca.ejemplos.Ejemplos;
+import com.beca.ejemplos.Excepciones;
+import com.beca.ejemplos.Flujos;
+import com.beca.interfaz.IEjemplos;
+
+public class AppMain {
+	
+	
+	
+	public static void main(String[] args) {
+		Ejemplos ejemplos = new Ejemplos();
+	}
+	
+	
+}

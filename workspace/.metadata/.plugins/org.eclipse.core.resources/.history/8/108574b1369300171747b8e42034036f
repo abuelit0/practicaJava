@@ -1,0 +1,21 @@
+package com.beca.metodos;
+
+public class PasoDeParametros {
+
+	public static void porReferencia(){
+		
+	}
+	
+	private static void _metodoReferencia(){
+		
+	}
+	
+	public static void porParametro(){
+		
+	}
+	
+	private static void _metodoParametro(){
+		
+	}
+	
+}

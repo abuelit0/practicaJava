@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.accenture.holaMundo.HolaMundo"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.beca.util.Utilidades"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.beca.arreglos.Persona"/>
+<fullyQualifiedTypeName name="com.beca.clasesAdicionales.Persona"/>
+<fullyQualifiedTypeName name="com.beca.clasesAdicionales.MiObjeto"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="com.beca.metodos.PasoDeParametros"/>
+<fullyQualifiedTypeName name="com.beca.flujos.Flujos"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="com.beca.interfaz.Ejemplos"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.lang.TypeNotPresentException"/>
+<fullyQualifiedTypeName name="com.beca.exceptions.PruebaException"/>
+<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.beca.ejemplos.Ejemplos"/>
+<fullyQualifiedTypeName name="com.beca.interfaz.IEjemplos"/>
+<fullyQualifiedTypeName name="com.beca.ejemplos.Flujos"/>
+<fullyQualifiedTypeName name="com.beca.ejemplos.Excepciones"/>
+<fullyQualifiedTypeName name="com.beca.ejemplos.Arreglos"/>
+<fullyQualifiedTypeName name="com.beca.ejemplos.PasoDeParametros"/>
+<fullyQualifiedTypeName name="com.beca.main.AppMain"/>
+<fullyQualifiedTypeName name="com.beca.clasesAdicionales.Person"/>
+<fullyQualifiedTypeName name="com.beca.ejemplos.Abstraccion"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,24 @@
+/*
+ * Creada el 05/09/2017
+ * */
+package com.beca.ejemplo;
+
+/**
+ * 
+ * @author Luis Guillermo Alvarez Jimenez
+ *
+ */
+public class JavaMain {
+	
+	public static void main(String[] args) {
+		//Imprime un mensaje
+		System.out.println("Hola Mundo!");
+	}
+
+}
+
+class Extra{
+	/*
+	 * 
+	 */
+}

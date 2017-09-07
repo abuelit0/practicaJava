@@ -1,0 +1,39 @@
+package com.beca.ejemplo;
+
+public class UnaryOperator {
+	
+	public static void main(String[] args) {
+		/*int num = 10;
+		
+		String a = "Hola";//new String("Hola");
+		String b = "Hola";//new String("Hola");
+		
+		System.out.println(a);
+		System.out.println(b);
+		
+		
+		
+		if(a == b){
+		
+		System.out.println("Incrementando/Decrementando");
+		System.out.println(++num);
+		System.out.println(--num);
+		System.out.println(num++);
+		System.out.println(num--);
+		System.out.println(num);
+		
+		System.out.println("Seting sing...");
+		System.out.println(+num);
+		System.out.println(-num);
+		}*/
+		
+		int a = 64000;
+		short b;
+		
+		b = (short) 64000;
+		
+		System.out.println(b);
+		System.out.println(32768 + 32768);
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.beca.ejemplos;
+
+import java.util.HashMap;
+
+import com.beca.interfaz.IEjemplos;
+
+public abstract class Ejemplos implements IEjemplos{
+	
+	private HashMap<String, IEjemplos> ejemplos = new HashMap<String, IEjemplos>();
+
+	public Ejemplos(IEjemplos ... ejemplos ){
+		
+		
+		
+		for (IEjemplos iEjemplos : ejemplos) {
+			
+		}
+	}
+	
+	private void ejecutaEjemplo(String key){
+		ejemplos.get(key).ejemplo();;
+	}
+}
