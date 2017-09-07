@@ -1,0 +1,18 @@
+package com.beca.ejemplos;
+
+public class Constructores extends Ejemplos{
+
+	
+
+}
+
+class MiClase{
+	
+	public MiClase() {
+		System.out.println("Mensaje desde el constructor");
+	}
+	
+	MiClase(String mensaje){
+		System.out.println(mensaje);
+	}
+}

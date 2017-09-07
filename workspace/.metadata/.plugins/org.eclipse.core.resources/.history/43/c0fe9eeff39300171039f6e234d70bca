@@ -1,0 +1,12 @@
+package com.beca.clasesAdicionales;
+
+public class MiClase{
+	
+	public MiClase() {
+		System.out.println("Mensaje desde el constructor");
+	}
+	
+	MiClase(String mensaje){
+		System.out.println(mensaje);
+	}
+}

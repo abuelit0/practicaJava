@@ -1,0 +1,30 @@
+package com.beca.ejercicio8;
+
+public class AppMainEjercicio8 {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	public static void metodo(){
+		int referencia = 0;
+		
+		do{
+			
+			etiqueta:
+			for(int i = 0; i < 10; i++){
+				
+				while(true){
+					
+					if(true){
+						continue etiqueta;
+					}else{
+						break etiqueta;
+					}
+					
+				}
+			}
+			
+		}while(referencia == 0);
+	}
+}

@@ -1,0 +1,13 @@
+package com.beca.ejercicio3;
+
+public class SubClase extends Clase{
+	
+	public SubClase(){
+		
+	}
+	
+	public SubClase(String mensaje){
+		super(mensaje);
+		System.out.println(mensaje);
+	}
+}

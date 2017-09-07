@@ -2,6 +2,7 @@ package com.beca.main;
 
 import com.beca.ejemplos.Abstraccion;
 import com.beca.ejemplos.Arreglos;
+import com.beca.ejemplos.Constructores;
 import com.beca.ejemplos.Ejemplos;
 import com.beca.ejemplos.Excepciones;
 import com.beca.ejemplos.Flujos;
@@ -15,9 +16,10 @@ public class AppMain {
 					new Excepciones(),
 					new Arreglos(),
 					new PasoDeParametros(),
-					new Abstraccion()
+					new Abstraccion(),
+					new Constructores()
 				);
 		
-		ejemplos.ejecutaEjemplo("Excepciones");
+		ejemplos.ejecutaEjemplo("Constructores");
 	}
 }

@@ -1,0 +1,13 @@
+package com.beca.ejercicio3;
+
+public class Clase {
+	
+	public Clase(){
+		this("Constructor de la clase Clase");
+	}
+	
+	public Clase(String mensaje){
+		System.out.println(mensaje);
+	}
+
+}

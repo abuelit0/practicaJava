@@ -1,0 +1,7 @@
+package com.beca.ejercicio13;
+
+import com.beca.ejercicio13.interfaz.IEdadExceptions;
+
+public class MenorDeEdadException implements IEdadExceptions{
+
+}

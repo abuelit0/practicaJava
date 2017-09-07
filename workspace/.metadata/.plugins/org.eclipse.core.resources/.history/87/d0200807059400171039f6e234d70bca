@@ -1,0 +1,48 @@
+package com.beca.ejercicio6;
+
+public class ClasePrincipal {
+
+	private InnerClass objeto;
+	private String dato;
+	
+	public ClasePrincipal(String dato){
+		_inizializaObjetoInner(dato);
+		this.dato = dato;
+	}
+	
+	public String consultaDatoObjetoInner(){
+		return objeto.getDato();
+	}
+	
+	private void _inizializaObjetoInner(String dato){
+		objeto = new InnerClass(dato);
+		
+		objeto.setDato(dato + "\tDato inizializado");
+	}
+	
+	class InnerClass{
+		
+		private String _data;
+		
+		public InnerClass(String dato){
+			this._data = dato;
+		}
+		
+		public void saludo(){
+			System.out.println("Saludo");
+		}
+		
+		public String getData(){
+			return _data;
+		}
+		
+	}
+
+	public String getDato() {
+		return dato;
+	}
+
+	public void setDato(String dato) {
+		this.dato = dato;
+	}
+}

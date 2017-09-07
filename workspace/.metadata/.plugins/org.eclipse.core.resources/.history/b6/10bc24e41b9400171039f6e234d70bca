@@ -1,0 +1,17 @@
+package com.beca.ejercicio13;
+
+public class AppMainEjercicio13 {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	
+	public void administraEntrada(Persona cliente) throws MenorDeEdadException{
+		
+		if(cliente.get_edad() < 12)
+			throw new MenorDeEdadException();
+		
+	}
+	
+}

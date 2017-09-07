@@ -1,0 +1,12 @@
+package com.beca.ejercicio3;
+
+public class SubSubClase {
+
+	public SubSubClase(){
+		
+	}
+	
+	public SubClase(String mensaje){
+		
+	}
+}

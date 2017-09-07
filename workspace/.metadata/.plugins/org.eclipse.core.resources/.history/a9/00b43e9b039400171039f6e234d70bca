@@ -1,0 +1,25 @@
+package com.beca.ejercicio6;
+
+public class ClasePrincipal {
+
+	InnerClass objeto = new InnerClass();
+	
+	
+	class InnerClass{
+		
+		private String _dato;
+		
+		public void saludo(){
+			System.out.println("Saludo");
+		}
+		
+		public void setDato(String dato){
+			this._dato = dato;
+		}
+		
+		public String getDato(){
+			return this._dato;
+		}
+		
+	}
+}

@@ -1,0 +1,14 @@
+package com.beca.ejercicio13;
+
+import com.beca.ejercicio13.interfaz.IEdadExceptions;
+
+public class ManejadorDeExcepciones {
+	
+	public static void administraExcepcion(IEdadExceptions e){
+		
+		System.out.println("Entra el manejador");
+		e.llamadaDeAtencion();
+		e.reporte();
+	}
+
+}

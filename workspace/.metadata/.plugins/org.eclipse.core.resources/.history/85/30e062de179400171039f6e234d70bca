@@ -1,0 +1,28 @@
+package com.beca.ejercicio11;
+
+public class AppMainEjercicio11 {
+	
+	public static void main(String[] args) {
+		
+		try{
+			
+			metodo();
+			
+		}catch (MiExcepcion e) {
+			// TODO: handle exception
+		}
+	}
+	
+	public static void metodo() throws MiExcepcion{
+		
+	}
+
+}
+
+class MiExcepcion extends Exception{
+	
+	public String toString(){
+		return "Saludos desde mi excepcion";
+	}
+	
+}

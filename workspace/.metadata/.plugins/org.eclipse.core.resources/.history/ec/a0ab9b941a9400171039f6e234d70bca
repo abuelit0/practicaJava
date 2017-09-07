@@ -1,0 +1,13 @@
+package com.beca.ejercicio13;
+
+import com.beca.ejercicio13.interfaz.IEdadExceptions;
+
+public class MenorDeEdadException implements IEdadExceptions{
+
+	@Override
+	public String llamadaDeAtencion() {
+		// TODO Auto-generated method stub
+		return "No deberias estar aqui sin tus papas niño!";
+	}
+
+}

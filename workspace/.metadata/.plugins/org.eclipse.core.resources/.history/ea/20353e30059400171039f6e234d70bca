@@ -1,0 +1,12 @@
+package com.beca.ejercicio6;
+
+public class AppMainEjercicio6 {
+	
+	public static void main(String[] args) {
+		ClasePrincipal objeto = new ClasePrincipal("Dato de inizializacion");
+		
+		objeto.consultaDatoObjetoInner();
+		System.out.println(objeto.getDato());
+	}
+
+}

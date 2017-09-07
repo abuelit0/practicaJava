@@ -1,0 +1,17 @@
+package com.beca.ejercicio1;
+
+public class MiClaseQueUsaTodo extends MiClaseAbstracta implements MiInterfaz{
+
+	@Override
+	public void metodoInterfaz() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void metodoAbstracto() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

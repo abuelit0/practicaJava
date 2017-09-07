@@ -1,0 +1,16 @@
+package com.beca.ejercicio2.acceso2;
+
+public class ClaseAcceso2 {
+	
+	public String valorPublico;
+	private String valorPrivado;
+	protected String valorProtegido;
+	
+	public ClaseAcceso2() {
+		this.valorPublico = "Publico";
+		this.valorPrivado = "Privado";
+		this.valorProtegido = "Protegido";
+	}
+	
+	
+}
