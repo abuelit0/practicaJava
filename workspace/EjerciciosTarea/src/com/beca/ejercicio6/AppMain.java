@@ -1,15 +1,21 @@
 package com.beca.ejercicio6;
 
+import com.beca.ejercicio6.ClasePrincipal.InnerStaticClass;
+
 public class AppMain {
 	
 	public static void main(String[] args) {
-		ClasePrincipal objeto = new ClasePrincipal("Dato de inizializacion");
+
+		ClasePrincipal objeto = new ClasePrincipal();
 		
-		/*
-		 *La informacion del objeto generado apartir de la inner class solo se puede 
-		 *acceder en la clase que lo implementa
-		 * */
-		objeto.consultaDatoObjetoInner();
+		ClasePrincipal.InnerClass obejtoInnerClass = objeto.new InnerClass();
+		ClasePrincipal.InnerStaticClass objetoInnerStaticClass = new InnerStaticClass();
+		
+		System.out.println(objeto.tomaDatoInner());
+		System.out.println(objeto.tomaDatoInnerStatic());
+		
+		System.out.println(obejtoInnerClass);
+		System.out.println(objetoInnerStaticClass);
 	}
 
 }
