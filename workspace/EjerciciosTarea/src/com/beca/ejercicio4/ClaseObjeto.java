@@ -5,15 +5,29 @@ public class ClaseObjeto {
 	private String _descripcion;
 	public static int objetos = 0;
 	
+	static{
+		
+		System.out.println("Se agrego un nuevo objeto.");
+	}
+	
+	{
+		System.out.println("Bloque de inizializacion no estatico");
+		_descripcion = "Default";
+		objetos++;
+	}
+	
+	public ClaseObjeto(){
+		
+	}
+	
 	public ClaseObjeto(String descripcion){
-		this.Inizializacion();
 		setDescripcion(descripcion);
 	}
 	
-	public static void Inizializacion(){
-		objetos++;
-		System.out.println("Se agrego un nuevo objeto.");
+	public String toString(){
+		return _descripcion;
 	}
+	
 
 	public String getDescripcion() {
 		return _descripcion;
