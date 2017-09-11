@@ -1,6 +1,6 @@
 package com.beca.clasesAdicionales;
 
-public class Persona {
+public class Persona extends MiBaseClass {
 	public void talk(){
 		System.out.println("blah, blah...");
 	}

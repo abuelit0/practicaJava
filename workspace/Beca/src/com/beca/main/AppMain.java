@@ -4,11 +4,13 @@ import com.beca.ejemplos.Ejemplos;
 import com.beca.ejemplos.base.Arreglos;
 import com.beca.ejemplos.base.Excepciones;
 import com.beca.ejemplos.base.Flujos;
+import com.beca.ejemplos.colecciones.Colecciones;
 import com.beca.ejemplos.herencia.Abstraccion;
 import com.beca.ejemplos.herencia.Casting;
 import com.beca.ejemplos.herencia.Constructores;
 import com.beca.ejemplos.herencia.LlamadaDeContructores;
 import com.beca.ejemplos.herencia.PasoDeParametros;
+import com.beca.ejemplos.interna.Internacionalizacion;
 import com.beca.ejemplos.polimorfismo.Polimorfismo;
 import com.beca.ejemplos.polimorfismo.SobreCargaSobreEscritura;
 import com.beca.ejemplos.retos.TiempoEjecucion;
@@ -31,9 +33,11 @@ public class AppMain{
 					new Casting(),
 					new SobreCargaSobreEscritura(),
 					new Polimorfismo(),
-					new VistaToString()
+					new VistaToString(),
+					new Internacionalizacion(),
+					new Colecciones()
 				);
 
-		ejemplos.ejecutaEjemplo("VistaToString");
+		ejemplos.ejecutaEjemplo("Colecciones");
 	}
 }

@@ -1,6 +1,6 @@
 package com.beca.clasesAdicionales;
 
-public class Person {
+public class Person extends MiBaseClass {
 
 	static int maleCount;
 	static int femaleCount;

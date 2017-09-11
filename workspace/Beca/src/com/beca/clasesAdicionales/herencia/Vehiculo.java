@@ -1,5 +1,7 @@
 package com.beca.clasesAdicionales.herencia;
 
-public class Vehiculo {
+import com.beca.clasesAdicionales.MiBaseClass;
+
+public class Vehiculo extends MiBaseClass {
 
 }

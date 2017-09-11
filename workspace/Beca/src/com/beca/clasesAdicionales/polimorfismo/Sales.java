@@ -1,6 +1,8 @@
 package com.beca.clasesAdicionales.polimorfismo;
 
-public class Sales {
+import com.beca.clasesAdicionales.MiBaseClass;
+
+public class Sales extends MiBaseClass {
 	
 	public double computeSales(double price) {
 		double sales = price;

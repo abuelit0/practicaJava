@@ -1,6 +1,6 @@
 package com.beca.clasesAdicionales;
 
-public class MiObjeto {
+public class MiObjeto  extends MiBaseClass{
 	
 	private int valorEntero;
 	private String valorCadena = "Valor original";

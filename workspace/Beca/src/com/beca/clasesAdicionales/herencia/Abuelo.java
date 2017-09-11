@@ -1,6 +1,8 @@
 package com.beca.clasesAdicionales.herencia;
 
-public class Abuelo {
+import com.beca.clasesAdicionales.MiBaseClass;
+
+public class Abuelo extends MiBaseClass {
 
 	public Abuelo() {
 		System.out.println("El Abuelo");

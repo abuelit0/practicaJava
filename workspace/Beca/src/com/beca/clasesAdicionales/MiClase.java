@@ -1,6 +1,6 @@
 package com.beca.clasesAdicionales;
 
-public class MiClase {
+public class MiClase extends MiBaseClass{
 	
 	/**
 	 * Usamos this para referenciar la misma clase, au usar this() -> nos referimos al constructor

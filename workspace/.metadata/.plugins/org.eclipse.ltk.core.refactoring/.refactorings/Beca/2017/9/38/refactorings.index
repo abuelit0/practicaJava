@@ -14,3 +14,7 @@
 1505146328599	Move compilation units
 1505158000055	Delete element
 1505158004368	Delete element
+1505163089336	Rename resource 'MessageBundle_es.properties'
+1505163130153	Rename resource 'MessageBundle_fr.properties'
+1505163168374	Rename resource 'MessageBundle_es_MX.properties'
+1505166405841	Rename type 'EjemploVector'
