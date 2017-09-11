@@ -5,17 +5,17 @@ public class Persona {
 		System.out.println("blah, blah...");
 	}
 	
-	public void jump(int times){
+	public void jump(int times) {
 		for(int i = 0; i < times; i++){
 			System.out.println("whoop!");
 		}
 	}
 	
-	public String tellAge(){
+	public String tellAge() {
 		return "I'm " + getAge();
 	}
 	
-	public int getAge(){
+	public int getAge() {
 		return 10;
 	}
 }

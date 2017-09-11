@@ -1,0 +1,16 @@
+package com.beca.ejercicio6;
+
+public class ClasePrincipal {
+	
+	public InnerClass nuevaInstancia(){
+		return new InnerClass();
+	}
+
+	static class InnerStaticClass{
+		
+	}
+	
+	class InnerClass{
+		
+	}
+}

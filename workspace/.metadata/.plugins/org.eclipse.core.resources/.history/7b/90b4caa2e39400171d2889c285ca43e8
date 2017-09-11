@@ -1,0 +1,14 @@
+package com.beca.ejemplos;
+
+public class Casting extends Ejemplos{
+	
+	@Override
+	public void ejecutaEjemplo(String key) {
+		
+	}
+
+class Vehiculo(){
+		
+	}
+
+}

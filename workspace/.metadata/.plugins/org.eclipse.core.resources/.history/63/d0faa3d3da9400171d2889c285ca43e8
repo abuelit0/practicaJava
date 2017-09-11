@@ -1,0 +1,8 @@
+package com.beca.clasesAdicionales;
+
+public class Abuelo {
+
+	public Abuelo(){
+		System.out.println("El abuelo");
+	}
+}

@@ -1,0 +1,35 @@
+package com.beca.main;
+
+import com.beca.ejemplos.Abstraccion;
+import com.beca.ejemplos.Arreglos;
+import com.beca.ejemplos.Constructores;
+import com.beca.ejemplos.Ejemplos;
+import com.beca.ejemplos.Excepciones;
+import com.beca.ejemplos.Flujos;
+import com.beca.ejemplos.PasoDeParametros;
+import com.beca.ejemplos.TiempoEjecucion;
+import com.beca.ejemplos.ValidaEntrada;
+import com.beca.ejemplos.herencia.Casting;
+import com.beca.ejemplos.herencia.LlamadaDeContructores;
+import com.beca.ejemplos.polimorfismo.SobreCargaSobreEscritura;
+
+public class AppMain {
+	
+	public static void main(String[] args) {
+		Ejemplos ejemplos = new Ejemplos(
+					new Flujos(),
+					new Excepciones(),
+					new Arreglos(),
+					new PasoDeParametros(),
+					new Abstraccion(),
+					new Constructores(),
+					new TiempoEjecucion(),
+					new ValidaEntrada(),
+					new LlamadaDeContructores(),
+					new Casting(),
+					new SobreCargaSobreEscritura()
+				);
+		
+		ejemplos.ejecutaEjemplo("SobreCargaSobreEscritura");
+	}
+}

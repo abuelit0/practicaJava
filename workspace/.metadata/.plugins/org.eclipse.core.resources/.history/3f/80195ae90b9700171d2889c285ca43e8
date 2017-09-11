@@ -1,0 +1,17 @@
+package com.beca.clasesAdicionales;
+
+import com.beca.clasesAdicionales.polimorfismo.Sales;
+
+public class SalesTax extends Sales{
+	
+	@Override
+	public double computeSales(double price) throws Exception{
+		double sales = price * 1.10;
+
+		return sales;
+	}
+	
+	private double computeSales (double price, int qty){
+		return 0;
+	}
+}

@@ -1,6 +1,6 @@
 package com.beca.exceptions;
 
-public class PruebaException extends Exception{
+public class PruebaException extends Exception {
 
 	private int[] _datos = new int[0];
 	
@@ -20,14 +20,14 @@ public class PruebaException extends Exception{
 		return super.getMessage() + _getDataDetails();
 	}
 	
-	private String _getDataDetails(){
+	private String _getDataDetails() {
 		String salida = "\n";
 		
 		try{
 			for (int i : _datos) {
 				salida += i + "\t";
 			}
-		}catch(NullPointerException e){
+		}catch(NullPointerException e) {
 			return "";
 		}
 		

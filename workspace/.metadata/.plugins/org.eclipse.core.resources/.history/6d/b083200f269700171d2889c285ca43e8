@@ -1,0 +1,19 @@
+package com.beca.ejemplos.herencia;
+
+import com.beca.clasesAdicionales.herencia.Hija;
+import com.beca.ejemplos.Ejemplos;
+
+public class LlamadaDeContructores extends Ejemplos {
+	
+	@Override
+	public void ejecutaEjemplo(String key) {
+		// TODO Auto-generated method stub
+		llamadas();
+	}
+	
+	private static void llamadas(){
+		@SuppressWarnings("unused")
+		Hija a = new Hija();
+	}
+
+}

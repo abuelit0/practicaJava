@@ -1,0 +1,35 @@
+package com.beca.ejemplos;
+
+public class ValidaEntrada extends Ejemplos{
+
+	@Override
+	public void ejecutaEjemplo(String key) {
+		
+		String entrada = "100";
+		
+		System.out.println(retornaFormato(entrada));
+		
+	}
+	
+	private boolean contieneNumero(String entrada){
+		boolean salida = false;
+		
+		return salida;
+	}
+	
+	private String retornaFormato(String entrada){
+		StringBuilder salida = new StringBuilder();
+		
+		double valor = Double.parseDouble(entrada);
+		int entero = (int)valor;
+		int decimal = 0;
+		
+		String decimales = decimal < 10 ? "00" : "" + decimal / 100;
+		
+		salida.append("$" + entero + "." + decimal);
+		
+		
+		return salida.toString();
+	}
+	
+}

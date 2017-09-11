@@ -1,0 +1,13 @@
+package com.beca.ejemplos;
+
+public class SobreCargaSobreEscritura extends Ejemplos{
+	
+	@Override
+	public void ejecutaEjemplo(String key) {
+		// TODO Auto-generated method stub
+		super.ejecutaEjemplo(key);
+	}
+	
+	
+
+}

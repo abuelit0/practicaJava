@@ -1,0 +1,5 @@
+package com.beca.clasesAdicionales;
+
+public class Avion extends Vehiculo{
+
+}

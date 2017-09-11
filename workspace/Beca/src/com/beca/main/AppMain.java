@@ -1,14 +1,21 @@
 package com.beca.main;
 
-import com.beca.ejemplos.Abstraccion;
-import com.beca.ejemplos.Arreglos;
-import com.beca.ejemplos.Constructores;
 import com.beca.ejemplos.Ejemplos;
-import com.beca.ejemplos.Excepciones;
-import com.beca.ejemplos.Flujos;
-import com.beca.ejemplos.PasoDeParametros;
+import com.beca.ejemplos.base.Arreglos;
+import com.beca.ejemplos.base.Excepciones;
+import com.beca.ejemplos.base.Flujos;
+import com.beca.ejemplos.herencia.Abstraccion;
+import com.beca.ejemplos.herencia.Casting;
+import com.beca.ejemplos.herencia.Constructores;
+import com.beca.ejemplos.herencia.LlamadaDeContructores;
+import com.beca.ejemplos.herencia.PasoDeParametros;
+import com.beca.ejemplos.polimorfismo.Polimorfismo;
+import com.beca.ejemplos.polimorfismo.SobreCargaSobreEscritura;
+import com.beca.ejemplos.retos.TiempoEjecucion;
+import com.beca.ejemplos.retos.ValidaEntrada;
+import com.beca.ejemplos.retos.VistaToString;
 
-public class AppMain {
+public class AppMain{
 	
 	public static void main(String[] args) {
 		Ejemplos ejemplos = new Ejemplos(
@@ -17,9 +24,16 @@ public class AppMain {
 					new Arreglos(),
 					new PasoDeParametros(),
 					new Abstraccion(),
-					new Constructores()
+					new Constructores(),
+					new TiempoEjecucion(),
+					new ValidaEntrada(),
+					new LlamadaDeContructores(),
+					new Casting(),
+					new SobreCargaSobreEscritura(),
+					new Polimorfismo(),
+					new VistaToString()
 				);
-		
-		ejemplos.ejecutaEjemplo("Constructores");
+
+		ejemplos.ejecutaEjemplo("VistaToString");
 	}
 }

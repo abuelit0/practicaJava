@@ -1,0 +1,10 @@
+package com.beca.clasesAdicionales.polimorfismo;
+
+public class Snake extends Animal {
+	
+	@Override
+	public void eat() {
+		System.out.println("Snake eating ...");
+	}
+
+}

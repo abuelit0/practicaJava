@@ -18,8 +18,7 @@ public class MiObjeto {
 		this.valorCadena = valorCadena;
 	}
 	
-	public String toString(){
+	public String toString() {
 		return getValorCadena() + "\t" + getValorEntero();
 	}
-	
 }

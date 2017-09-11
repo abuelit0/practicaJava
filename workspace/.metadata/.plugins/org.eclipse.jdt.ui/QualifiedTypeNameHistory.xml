@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.accenture.holaMundo.HolaMundo"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="com.beca.util.Utilidades"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="com.beca.arreglos.Persona"/>
 <fullyQualifiedTypeName name="com.beca.clasesAdicionales.Persona"/>
@@ -15,10 +11,8 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 <fullyQualifiedTypeName name="com.beca.interfaz.Ejemplos"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.lang.TypeNotPresentException"/>
 <fullyQualifiedTypeName name="com.beca.exceptions.PruebaException"/>
-<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="com.beca.ejemplos.Ejemplos"/>
 <fullyQualifiedTypeName name="com.beca.interfaz.IEjemplos"/>
@@ -26,7 +20,44 @@
 <fullyQualifiedTypeName name="com.beca.ejemplos.Excepciones"/>
 <fullyQualifiedTypeName name="com.beca.ejemplos.Arreglos"/>
 <fullyQualifiedTypeName name="com.beca.ejemplos.PasoDeParametros"/>
-<fullyQualifiedTypeName name="com.beca.main.AppMain"/>
 <fullyQualifiedTypeName name="com.beca.clasesAdicionales.Person"/>
 <fullyQualifiedTypeName name="com.beca.ejemplos.Abstraccion"/>
+<fullyQualifiedTypeName name="com.beca.ejemplos.MiClase"/>
+<fullyQualifiedTypeName name="java.beans.ConstructorProperties"/>
+<fullyQualifiedTypeName name="com.beca.main.AppMain"/>
+<fullyQualifiedTypeName name="com.beca.ejemplos.Constructores"/>
+<fullyQualifiedTypeName name="com.beca.clasesAdicionales.MiClase"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio1.MiClaseAbstracta"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio1.MiInterfaz"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio1.MiClaseQueUsaTodo"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio2.acceso1.ClaseAcceso12"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio2.acceso1.ClaseAcceso11"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio2.acceso2.ClaseAcceso21"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio2.acceso2.ClaseAcceso22"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio3.Clase"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio3.SubClase"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio3.SubSubClase"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio5.AppMainEjercicio5"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio4.ClaseObjeto"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio6.ClasePrincipal"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio6.ClasePrincipal.InnerClass"/>
+<fullyQualifiedTypeName name="java.lang.ClassCastException"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="java.lang.AssertionError"/>
+<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="javax.sound.midi.MidiUnavailableException"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio11.AppMainEjercicio11.MiExcepcion"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio11.MiExcepcion"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.awt.Desktop"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio13.Persona"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio13.ManejadorDeExcepciones"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio13.interfaz.IEdadExceptions"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio13.AdolecenteException"/>
+<fullyQualifiedTypeName name="com.beca.ejercicio13.MenorDeEdadException"/>
 </qualifiedTypeNameHistroy>

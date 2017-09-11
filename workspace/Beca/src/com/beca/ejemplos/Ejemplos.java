@@ -3,11 +3,11 @@ package com.beca.ejemplos;
 import java.util.HashMap;
 import com.beca.interfaz.IEjemplos;
 
-public class Ejemplos implements IEjemplos{
+public class Ejemplos {
 	
 	private HashMap<String, IEjemplos> _ejemplos;
 
-	public Ejemplos(IEjemplos ... ejemplos){
+	public Ejemplos(IEjemplos ... ejemplos) {
 		
 		this._ejemplos = new HashMap<String, IEjemplos>();
 		
@@ -16,11 +16,7 @@ public class Ejemplos implements IEjemplos{
 		}
 	}
 	
-	public void ejecutaEjemplo(String key){
+	public void ejecutaEjemplo(String key) {
 		_ejemplos.get(key).ejecutaEjemplo(null);
-	}
-	
-	public final void otra(){
-		
 	}
 }

@@ -1,0 +1,29 @@
+package com.beca.ejemplos;
+
+public class TiempoEjecucion extends Ejemplos{
+
+	public void ejecutaEjemplo(String key){
+		
+	}
+	
+	private void _stringVSstringBuilderVSstringBuffer(){
+		String string = "";
+		StringBuilder stringBuilder = new StringBuilder();
+		StringBuffer stringBuffer = new StringBuffer();
+		
+		long tiempo;
+		
+		tiempo = System.currentTimeMillis();
+		
+		for(int i = 0; i < 1000; i++){
+			string += i;
+		}
+		
+		tiempo = tiempo - System.currentTimeMillis();
+		
+		System.out.println(tiempo);
+		
+		
+	}
+	
+}

@@ -22,7 +22,6 @@ public class AppMain {
 				ManejadorDeExcepciones.administraExcepcion(e);
 			}
 		}
-		
 	}
 	
 	
@@ -35,7 +34,5 @@ public class AppMain {
 			throw new AdolecenteException(cliente);
 		
 		System.out.println("Bienvenido: " + cliente);
-		
 	}
-	
 }

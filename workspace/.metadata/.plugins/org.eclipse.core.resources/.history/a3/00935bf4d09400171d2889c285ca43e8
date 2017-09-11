@@ -1,0 +1,48 @@
+package com.beca.ejemplos;
+
+import java.math.BigDecimal;
+
+public class ValidaEntrada extends Ejemplos{
+
+	@Override
+	public void ejecutaEjemplo(String key) {
+		
+		String entrada = "100.200";
+		
+		System.out.println(retornaFormato(entrada));
+		
+	}
+	
+	private boolean contieneNumero(String entrada){
+		boolean salida = false;
+		
+		return salida;
+	}
+	
+	private String retornaFormato(String entrada){
+		StringBuilder salida = new StringBuilder();
+		
+		double valor = Double.parseDouble(entrada);
+		int entero = (int)valor;
+		valor -= entero;
+		int decimal = (int)valor;
+		
+		System.out.println(entero);
+		System.out.println(decimal);
+		
+		BigDecimal number = new BigDecimal("31.54234");
+		long iPart = number.longValue();
+		BigDecimal fraccion = number.remainder(BigDecimal.ONE);
+
+		System.out.println("Integer part = " + iPart);
+		System.out.println("Fractional part = " + fraccion.toString().substring(0, 2));
+		
+		String decimales = decimal < 10 ? "00" : "" + decimal;
+		
+		salida.append("$" + entero + "." + decimales);
+		
+		
+		return salida.toString();
+	}
+	
+}
