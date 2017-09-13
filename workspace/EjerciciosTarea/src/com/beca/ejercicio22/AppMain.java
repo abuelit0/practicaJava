@@ -10,6 +10,7 @@ public class AppMain {
 		
 		String texto = "3.14, 0x17-5b, cat.dog.";
 		
+		
 		String separadores = "[" + args[0] + "]+";
 		
 		String[] parts = texto.split(separadores);
