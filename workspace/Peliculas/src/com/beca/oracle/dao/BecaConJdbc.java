@@ -10,7 +10,7 @@ public class BecaConJdbc {
 	
 	private static final String usr = "beca";
 	private static final String pass = "beca";
-	private static final String ip = "localhost";//"192.168.100.109";
+	private static String ip = "localhost";//"192.168.100.109";
 	private Connection con;
 	
 	public void connectar(){
@@ -51,5 +51,9 @@ public class BecaConJdbc {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	public static void setIp(String ip){
+		BecaConJdbc.ip = ip;
 	}
 }

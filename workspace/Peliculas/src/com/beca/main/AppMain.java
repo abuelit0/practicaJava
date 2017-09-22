@@ -10,6 +10,6 @@ public class AppMain{
 					new ManejoDB()
 				);
 
-		ejemplos.ejecutaEjemplo("ManejoDB");
+		ejemplos.SetParametros("ManejoDB", args);
 	}
 }

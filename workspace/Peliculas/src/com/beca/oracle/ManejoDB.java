@@ -18,7 +18,15 @@ public class ManejoDB implements IEjemplos{
 		prueba();
 	}
 	
+	@Override
+	public void ejecutaEjemplo(String key, String[] arg) {
+		// TODO Auto-generated method stub
+		BecaConJdbc.setIp(arg[0]);
+		prueba();
+	}
+	
 	private void prueba(){
+		
 		BecaConJdbc b = new BecaConJdbc();
 		b.operacion(ejemplo, "SELECT * FROM PELICULAS");
 		

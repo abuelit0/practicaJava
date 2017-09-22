@@ -6,6 +6,7 @@ import com.beca.interfaz.IEjemplos;
 public class Ejemplos {
 	
 	private HashMap<String, IEjemplos> _ejemplos;
+	private String[] parametros;
 
 	public Ejemplos(IEjemplos ... ejemplos) {
 		
@@ -17,6 +18,15 @@ public class Ejemplos {
 	}
 	
 	public void ejecutaEjemplo(String key) {
-		_ejemplos.get(key).ejecutaEjemplo(null);
+		_ejemplos.get(key).ejecutaEjemplo("");
+	}
+	
+	public void SetParametros(String key, String []parametros){
+		this.parametros = parametros;
+		try {
+			_ejemplos.get(key).ejecutaEjemplo(key, parametros);
+		} catch (Exception e) {
+			System.out.println("Hay un error en los parametros");
+		}
 	}
 }
