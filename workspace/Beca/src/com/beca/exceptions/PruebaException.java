@@ -1,32 +1,42 @@
 package com.beca.exceptions;
 
+/**
+ * @author HP
+ * Clase para probar excepciones
+ */
 public class PruebaException extends Exception {
 
-	private int[] _datos = new int[0];
+	private int[] datos = new int[0];
 	
+	/**
+	 * Metodo constructor un arguemnto
+	 * @param detalle
+	 */
 	public PruebaException(String detalle) {
 		super(detalle);
-
 	}
 	
+	/**
+	 * Metodo constructor dos argumetnos
+	 * @param detalle
+	 * @param datos
+	 */
 	public PruebaException(String detalle, int []datos) {
 		super(detalle);
-		_datos = datos;
+		this.datos = datos;
 	}
 	
 	@Override
 	public String getMessage() {
-		// TODO Auto-generated method stub
-		return super.getMessage() + _getDataDetails();
+		return super.getMessage() + getDataDetails();
 	}
 	
-	private String _getDataDetails() {
+	private String getDataDetails() {
 		String salida = "\n";
 		
 		try{
-			for (int i : _datos) {
+			for (int i : datos)
 				salida += i + "\t";
-			}
 		}catch(NullPointerException e) {
 			return "";
 		}

@@ -1,7 +1,0 @@
-package com.beca.ejercicio13.interfaz;
-
-public interface IEdadExceptions {
-	
-	public String llamadaDeAtencion();
-
-}

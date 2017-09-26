@@ -1,0 +1,6 @@
+package com.beca.interfaz;
+
+public interface IOperacionDB {
+	public int sentencia(String);
+
+}

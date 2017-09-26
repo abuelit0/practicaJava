@@ -1,7 +1,0 @@
-package com.beca.metodos;
-
-public class AppMain {
-	public static void main(String[] args) {
-		PasoDeParametros.ejemplo();
-	}
-}

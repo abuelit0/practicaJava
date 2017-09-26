@@ -1,0 +1,5 @@
+package com.beca.oracle.dao;
+
+public class BecaConJdbc {
+
+}

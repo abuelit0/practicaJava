@@ -3,16 +3,19 @@ package com.beca.ejemplos.base;
 import com.beca.exceptions.PruebaException;
 import com.beca.interfaz.IEjemplos;
 
+/**
+ * Clase de ejemplos para excepciones
+ * @author HP
+ *
+ */
 public class Excepciones implements IEjemplos{
 
+	/**
+	 * Metodo implementado para la ejecucion de ejemplo
+	 */
 	public void ejecutaEjemplo(String key) {
-		// TODO Auto-generated method stub
 		 _ejemplo1();
 		EjemploThrows();
-	}
-
-	public void otra(String a) {
-		
 	}
 	
 	@SuppressWarnings("null")
@@ -39,13 +42,10 @@ public class Excepciones implements IEjemplos{
 		try {
 			_checaGrades();
 		} catch (PruebaException e) {
-			// TODO: handle exception
 			System.out.println(e.getMessage());
 		}catch (NullPointerException e) {
 			
 		}
-		
-		
 	}
 
 	private void _checaGrades() throws NullPointerException, PruebaException {
@@ -57,10 +57,7 @@ public class Excepciones implements IEjemplos{
 				if (grades[i] <= 0) 
 					throw new Exception();
 		} catch (Exception e){
-			//throw new PruebaException("Error: Invalid grade", grades);
 			throw new PruebaException("Error: Invalid grade");
 		}
-
 	}
-
 }

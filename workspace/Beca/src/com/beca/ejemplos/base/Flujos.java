@@ -4,6 +4,9 @@ import com.beca.interfaz.IEjemplos;
 
 public class Flujos implements IEjemplos {
 	
+	/**
+	 * Metodo implementado para la ejecucion de ejemplo
+	 */
 	public void ejecutaEjemplo(String key) {
 		_switch();
 		

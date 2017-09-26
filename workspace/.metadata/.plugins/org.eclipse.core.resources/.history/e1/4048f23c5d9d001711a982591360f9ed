@@ -1,0 +1,20 @@
+package com.beca.oracle;
+
+import com.beca.interfaz.IEjemplos;
+import com.beca.oracle.dao.BecaConJdbc;
+
+public class ManejoDB implements IEjemplos{
+	
+	@Override
+	public void ejecutaEjemplo(String arg) {
+		// TODO Auto-generated method stub
+		prueba();
+	}
+	
+	private void prueba(){
+		BecaConJdbc b = new BecaConJdbc();
+		
+		b.operacion("SELECT * FROM PELICULAS");
+	}
+
+}

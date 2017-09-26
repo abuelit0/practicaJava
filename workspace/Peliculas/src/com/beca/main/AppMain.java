@@ -6,10 +6,16 @@ import com.beca.oracle.ManejoDB;
 public class AppMain{
 	
 	public static void main(String[] args) {
+		
+		String ejemploEjecutable = "ManejoDB";
+		
 		Ejemplos ejemplos = new Ejemplos(
 					new ManejoDB()
 				);
-
-		ejemplos.SetParametros("ManejoDB", args);
+		
+		if(args.length > 0)
+			ejemplos.SetParametros(ejemploEjecutable, args);
+		else
+			ejemplos.ejecutaEjemplo(ejemploEjecutable);
 	}
 }

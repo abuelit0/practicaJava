@@ -1,9 +1,0 @@
-package com.beca.clasesAdicionales.herencia;
-
-public final class Hija extends Padre{
-
-	public Hija(){
-		System.out.println("La Hija");
-	}
-	
-}

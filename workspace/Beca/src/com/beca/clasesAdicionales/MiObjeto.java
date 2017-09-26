@@ -1,5 +1,10 @@
 package com.beca.clasesAdicionales;
 
+/**
+ * Clase para ejemplificar la estructura base de un objeto
+ * @author HP
+ *
+ */
 public class MiObjeto  extends MiBaseClass{
 	
 	private int valorEntero;

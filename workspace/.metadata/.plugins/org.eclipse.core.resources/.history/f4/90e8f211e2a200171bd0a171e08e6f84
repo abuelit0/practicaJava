@@ -1,0 +1,15 @@
+package com.beca.clasesAdicionales.polimorfismo;
+
+/**
+ * Clase que hereda de la clase animal para ejemplificar la herencia
+ * @author HP
+ *
+ */
+public class Snake extends Animal {
+	
+	@Override
+	public void eat() {
+		System.out.println("Snake eating ...");
+	}
+
+}

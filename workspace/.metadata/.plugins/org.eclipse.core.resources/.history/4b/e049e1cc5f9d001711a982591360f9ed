@@ -1,0 +1,46 @@
+package com.beca.oracle;
+
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import com.beca.interfaz.IEjemplos;
+import com.beca.interfaz.IOperacionDB;
+import com.beca.oracle.dao.BecaConJdbc;
+
+public class ManejoDB implements IEjemplos{
+	
+	@Override
+	public void ejecutaEjemplo(String arg) {
+		// TODO Auto-generated method stub
+		prueba();
+	}
+	
+	private void prueba(){
+		BecaConJdbc b = new BecaConJdbc();
+		
+		
+		
+		//b.operacion(ejemplo, "SELECT * FROM PELICULAS");
+		
+		b.ejecutaFuncion();
+	}
+	
+	IOperacionDB ejemplo = (s, con) -> {
+		
+		Statement stmt = con.createStatement();
+		ResultSet rs = stmt.executeQuery(s);
+		
+		while(rs.next())
+			System.out.println(rs.getInt(1) + "\t" + rs.getString(2) + "\t" + rs.getString(3));
+		
+		return 0;
+	};
+	
+	IOperacionDB funcion = (s, con) -> {
+		
+		
+		
+		return 0;
+	};
+
+}

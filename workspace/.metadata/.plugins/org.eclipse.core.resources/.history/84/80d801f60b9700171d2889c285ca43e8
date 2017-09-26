@@ -1,8 +1,0 @@
-package com.beca.clasesAdicionales;
-
-public class Padre extends Abuelo{
-
-	public Padre(){
-		System.out.println("El Padre");
-	}
-}

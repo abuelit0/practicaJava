@@ -1,9 +1,0 @@
-package com.beca.ejemplos;
-
-public class Abstraccion extends Ejemplos{
-
-	public void ejecutaEjemplo(String key){
-	}
-	
-	
-}

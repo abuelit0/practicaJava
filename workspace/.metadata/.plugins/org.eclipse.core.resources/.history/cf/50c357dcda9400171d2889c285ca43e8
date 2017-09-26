@@ -1,7 +1,0 @@
-package com.beca.clasesAdicionales;
-
-public class Hija extends Padre{
-
-	
-	
-}

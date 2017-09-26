@@ -1,5 +1,0 @@
-package com.beca.clasesAdicionales.polimorfismo;
-
-public class Horse extends Animal{
-
-}

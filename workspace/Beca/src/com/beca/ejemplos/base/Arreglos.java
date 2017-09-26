@@ -13,15 +13,15 @@ public class Arreglos implements IEjemplos {
 
 	public void ejecutaEjemplo(String key) {
 		
-		_ejemplo1();
-		_ejemplo2();
-		_ejemplo3();
+		ejemplo1();
+		ejemplo2();
+		ejemplo3();
 	}
 	
 	/**
 	 * Definicion de un arreglo
 	 */
-	private void _ejemplo1() {
+	private void ejemplo1() {
 		int []scores;
 		
 		scores = new int[3];
@@ -36,7 +36,7 @@ public class Arreglos implements IEjemplos {
 	/**
 	 * Recorrer un arreglo
 	 */
-	private void _ejemplo2() {
+	private void ejemplo2() {
 		int []numbers = new int[3];
 		
 		numbers[0] = 100;
@@ -45,12 +45,12 @@ public class Arreglos implements IEjemplos {
 		
 		int []newNumbers = {100, 200, 300};
 		
-		_imprimeArreglo(newNumbers);
-		_imprimeArreglo(new int[]{1,2,3,4});
+		imprimeArreglo(newNumbers);
+		imprimeArreglo(new int[]{1,2,3,4});
 		numbers = newNumbers;
 	}
 	
-	private void _ejemplo3() {
+	private void ejemplo3() {
 		Persona you = new Persona();
 		
 		you.talk();
@@ -76,7 +76,7 @@ public class Arreglos implements IEjemplos {
 	 * Imprime un arreglo de numeros
 	 * @param n Arreglo de enteros
 	 */
-	private void _imprimeArreglo(int []n) {
+	private void imprimeArreglo(int []n) {
 		for (int i : n) {
 			System.out.println(i);
 		}

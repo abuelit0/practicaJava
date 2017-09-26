@@ -1,0 +1,64 @@
+package com.beca.oracle.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class BecaConJdbc {
+	
+	private static final String usr = "beca";
+	private static final String pass = "beca";
+	private static final String ip = "192.168.100.109";
+	private Connection con;
+	private Statement stmt;
+	
+	private void connectar(){
+		
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			
+			con = DriverManager.getConnection("jdbc:oracle:thin@" + ip + ":1521:xe", usr, pass);
+			
+			stmt = con.createStatement();
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public void operacion(String query){
+		
+		connectar();
+		
+		try {
+			
+			ResultSet rs = stmt.executeQuery(query);
+			
+			while(rs.next())
+				System.out.println(rs.getInt(1) + " " + rs.getString(2) + " " + rs.getString(3));
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally{
+			desconectar();
+		}
+	}
+	
+	private void desconectar(){
+		
+		try {
+			con.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

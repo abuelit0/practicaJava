@@ -1,20 +1,37 @@
 package com.beca.clasesAdicionales;
 
+/**
+ * Clase con una estructura opcional de como declarar una persona
+ * @author HP
+ *
+ */
 public class Persona extends MiBaseClass {
+	
+	/**
+	 * Imprime la ejemplificacion de una persona hablando
+	 */
 	public void talk(){
 		System.out.println("blah, blah...");
 	}
 	
+	/**
+	 * Imprime el spnido de cuantas veces salta una persona
+	 * @param times
+	 */
 	public void jump(int times) {
 		for(int i = 0; i < times; i++){
 			System.out.println("whoop!");
 		}
 	}
 	
+	/**
+	 * Imprime la edad de la persona
+	 * @return
+	 */
 	public String tellAge() {
 		return "I'm " + getAge();
 	}
-	
+
 	public int getAge() {
 		return 10;
 	}

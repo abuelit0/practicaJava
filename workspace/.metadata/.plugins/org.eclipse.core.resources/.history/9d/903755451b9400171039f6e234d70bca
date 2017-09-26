@@ -1,9 +1,0 @@
-package com.beca.ejercicio13;
-
-public class ManejadorDeExcepciones {
-	
-	public void administraEntrada(Persona cliente){
-		
-	}
-
-}
