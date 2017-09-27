@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ejemplo01EAREJB-1.0-SNAPSHOT">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="ejemplo01EJBWeb-1.0-SNAPSHOT.war" deploy-path="/" handle="module:/resource/ejemplo01EJBWeb/ejemplo01EJBWeb">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ejemplo01EJB-1.0-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/ejemplo01EJB/ejemplo01EJB">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ejemplo01Cliente-1.0-SNAPSHOT.jar" deploy-path="/lib" handle="module:/resource/ejemplo01Cliente/ejemplo01Cliente">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cmpIsbanDataAccess-1.11.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/mx/isban/agave/cmpIsbanDataAccess/1.11.1/cmpIsbanDataAccess-1.11.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cmpCommonsGlobal-1.1.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/mx/isban/agave/cmpCommonsGlobal/1.1.0/cmpCommonsGlobal-1.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cmpConfiguracion-1.1.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/mx/isban/agave/cmpConfiguracion/1.1.0/cmpConfiguracion-1.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cmpLogging-1.1.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/mx/isban/agave/cmpLogging/1.1.0/cmpLogging-1.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-1.2.17.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/log4j/log4j/1.2.17/log4j-1.2.17.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cmpCommons-1.1.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/mx/isban/agave/cmpCommons/1.1.0/cmpCommons-1.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cmpLoggingDB-1.1.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/mx/isban/agave/cmpLoggingDB/1.1.0/cmpLoggingDB-1.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="json-lib-2.4-jdk15.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-beanutils-1.8.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections-3.2.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang-2.5.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/commons-lang/commons-lang/2.5/commons-lang-2.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.1.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ezmorph-1.0.6.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javaee-api-6.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/javaee-api/6.0/javaee-api-6.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.isban.mfconnectors.jca.trxop.cci-1.0.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/partenon/com.isban.mfconnectors.jca.trxop.cci/1.0.2/com.isban.mfconnectors.jca.trxop.cci-1.0.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cmpChannelCics-1.11.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/mx/isban/agave/cmpChannelCics/1.11.1/cmpChannelCics-1.11.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jms-1.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/jms/jms/1.1/jms-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cmpChannelDatabase-1.11.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/mx/isban/agave/cmpChannelDatabase/1.11.0/cmpChannelDatabase-1.11.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ojdbc6-11.2.0.3.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/oracle/ojdbc6/11.2.0.3/ojdbc6-11.2.0.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cmpChannelPartenon-1.11.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/mx/isban/agave/cmpChannelPartenon/1.11.1/cmpChannelPartenon-1.11.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cmpAuditoria-1.1.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/mx/isban/agave/cmpAuditoria/1.1.0/cmpAuditoria-1.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cmpMensajeria-1.1.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/mx/isban/agave/cmpMensajeria/1.1.0/cmpMensajeria-1.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cmpChannelGenericMQ-1.11.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/mx/isban/agave/cmpChannelGenericMQ/1.11.0/cmpChannelGenericMQ-1.11.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

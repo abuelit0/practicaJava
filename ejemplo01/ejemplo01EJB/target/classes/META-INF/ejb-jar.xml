@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_1.xsd" version="3.1">
+    <display-name>ejemplo01EJB</display-name>
+    <assembly-descriptor>
+        <interceptor-binding>
+            <ejb-name>*</ejb-name>
+            <interceptor-order>
+                <interceptor-class>mx.isban.agave.commons.interceptors.EJBInterceptor</interceptor-class>
+                <!-- SE COMENTA: -->
+                <!-- Habilita interceptor para componente de monitoreo Agave -->
+                <!-- <interceptor-class>mx.isban.agave.commons.interceptors.EJBAuditInterceptor</interceptor-class> -->
+            </interceptor-order>
+        </interceptor-binding>
+    </assembly-descriptor>
+
+    <ejb-client-jar>ejemplo01Cliente.jar</ejb-client-jar>
+</ejb-jar>

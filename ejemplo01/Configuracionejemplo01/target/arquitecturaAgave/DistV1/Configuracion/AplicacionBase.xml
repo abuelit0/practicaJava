@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<componentes>
+	<cmpConfiguracion id="1" activo='true'>
+		<MODO replicable='false'>local</MODO>
+		<SERVIDOR replicable='false'>localhost</SERVIDOR>
+		<ID_CONFIG_APP replicable='false'>AplicacionBase</ID_CONFIG_APP>
+		<REF_ID_APP replicable='false'>AplicacionBase</REF_ID_APP>
+		<NOMBRE_APLICACION replicable='false'>AplicacionBase</NOMBRE_APLICACION>
+		<MAXIMO_REGISTROS replicable='false'>1000</MAXIMO_REGISTROS>
+		<REGISTROS_PAGINA replicable='false'>50</REGISTROS_PAGINA>
+		<MAXIMO_PAGINAS replicable='false'>20</MAXIMO_PAGINAS>
+		<RUTA_BASE_DIR_ARQ replicable='false'>C:\arquitecturaAgave\DistV1</RUTA_BASE_DIR_ARQ>
+	</cmpConfiguracion>
+
+	<cmpLogging id="2" activo='true' init="true"
+		class="mx.isban.agave.logging.Logging">
+		<MODE_LOG replicable='true'>CONSOLE</MODE_LOG>
+		<PATH_LOG replicable='true'>C:\arquitecturaAgave\DistV1/temp/cmpLogging/aplicacionbase.log</PATH_LOG>
+		<LEVEL_LOG replicable='true'>DEBUG</LEVEL_LOG>
+		<DB_LOGGING replicable='true'>FALSE</DB_LOGGING>
+		<CAMPO_FILTRO replicable='true'></CAMPO_FILTRO>
+		<FILTRO replicable='true'></FILTRO>
+		<ID_CANAL replicable='true'></ID_CANAL>
+		<SHOW_WORK_THREAD replicable='true'>FALSE</SHOW_WORK_THREAD>
+	</cmpLogging>
+
+	<!--<IsbanDataAccess id="3" activo='true' init="true" class="mx.isban.agave.dataaccess.DataAccess">
+		<activo replicable='false'>true</activo>
+		<init replicable='false'>true</init>
+		<initClass replicable='false'>mx.isban.agave.dataaccess.DataAccess</initClass>
+
+		<GENERAL.ID_DEFAULT_CONFIGURATION_DB replicable='false'>CANAL_ARQ_BD</GENERAL.ID_DEFAULT_CONFIGURATION_DB>
+		<GENERAL.FACTORIES_REFERENCE replicable='false'>DATABASE.CANAL_ARQ_BD@</GENERAL.FACTORIES_REFERENCE>
+		<GENERAL.PROFILE_MODE replicable='false'>OFF</GENERAL.PROFILE_MODE>
+		<GENERAL.SIMUALATION_MODE replicable='false'>OFF</GENERAL.SIMUALATION_MODE>
+		<GENERAL.STRESS_MODE replicable='false'>OFF</GENERAL.STRESS_MODE>
+		<GENERAL.PATH_PROFILE replicable='false'>/arquitecturaAgave/temp/cmpIsbanDataAccess/profiles/</GENERAL.PATH_PROFILE>
+		<GENERAL.TRACE_ACTIVO replicable='false'>ON</GENERAL.TRACE_ACTIVO>
+		<GENERAL.LOG_FILE replicable='false'>cmpIsbanDataAccess.log</GENERAL.LOG_FILE>
+		<GENERAL.LOG_PATH replicable='false'>/arquitecturaAgave/temp/cmpIsbanDataAccess/log/</GENERAL.LOG_PATH>
+		<GENERAL.LOG_LEVEL replicable='false'>ERROR</GENERAL.LOG_LEVEL>
+		<GENERAL.SECURITY_KEY replicable='false'>KeySeguridad</GENERAL.SECURITY_KEY>
+
+		<DATABASE.CANAL_ARQ_BD.FACTORY_CLASS_NAME replicable='false'>mx.isban.agave.dataaccess.factories.jdbc.FactoryJDBC</DATABASE.CANAL_ARQ_BD.FACTORY_CLASS_NAME>
+		<DATABASE.CANAL_ARQ_BD.TYPE_CONECTION replicable='false'>DATASOURCE</DATABASE.CANAL_ARQ_BD.TYPE_CONECTION>
+		<DATABASE.CANAL_ARQ_BD.JNDI_NAME replicable='false'>jdbc/bdArqAgaveDistV1</DATABASE.CANAL_ARQ_BD.JNDI_NAME>
+	</IsbanDataAccess> 
+	
+	<cmpAuditoria id="4" activo='true'>
+		<activo replicable='false'>true</activo>
+		<init replicable='false'>false</init>
+		<initClass replicable='false'></initClass>
+		<ID_CANAL_AUDITORIA replicable='false'>CANAL_ARQ_BD
+		</ID_CANAL_AUDITORIA>
+	</cmpAuditoria>
+
+	<cmpMensajeriaApi id="5" activo='true'>
+		<SELECTOR_EJECUTORES replicable='false'>BANKSPHERE</SELECTOR_EJECUTORES>
+		<BO_EJECUTORES replicable='false'>root.defaultSecurity.UserManagement.UserKeys.changePassword:mx.isban.tdc.logfuncional.ejecutores.EjecutorCambioPasswordBO@root.defaultSecurity.Security.Keys.authenticate:mx.isban.tdc.logfuncional.ejecutores.EjecutorLogonBO@root.defaultSecurity.Security.Keys.cookieLocalLogOff:mx.isban.tdc.logfuncional.ejecutores.EjecutorLogoutBO@root.defaultSecurity.UserManagement.UserKeys.resetPassword:mx.isban.tdc.logfuncional.ejecutores.EjecutorResetPasswordBO@</BO_EJECUTORES>
+	</cmpMensajeriaApi> -->
+</componentes>

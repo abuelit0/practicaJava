@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<componentes>
+
+	<!-- En la configuracion del componente cmpConfiguracion nunca se debe de poner su atributo init en true, ya que el listener lo inicializa -->
+	<cmpConfiguracion id="1" activo='true'>
+		<MODO 				replicable='false'>local</MODO> 									<!-- Es la forma en como se van a obtener los valores de las configuraciones. [local|distribuido] -->
+	    <SERVIDOR 			replicable='false'>ServerName</SERVIDOR> 							<!-- Es el ID del servidor donde se esta ejecutando la App. Este es usado para operaciones con la BD -->
+	    <ID_CONFIG_APP 		replicable='false'>IdConfigejemplo01WEB</ID_CONFIG_APP>	<!-- Es el ID de la App, el cual es usado para identificar el conjunto de configuraciones que estan asociadas a esta App, Solo es usada para cosas referentes a las configuraciones en memoria. -->
+	    <REF_ID_APP 		replicable='false'>IdConfigejemplo01WEB</REF_ID_APP>		<!-- Es el ID de la App, el cual es usado para hacer referencia a la App en toda operación que tenga que ver con 2ABE y con la BD. -->
+	    <NOMBRE_APLICACION 	replicable='false'>ejemplo01 WEB</NOMBRE_APLICACION>	<!-- Es el nombre de la Aplicacion. -->
+	    <MAXIMO_REGISTROS 	replicable='false'>1000</MAXIMO_REGISTROS>							<!-- Es el máximo número de registros que serán recuperados. -->
+	    <REGISTROS_PAGINA 	replicable='false'>50</REGISTROS_PAGINA>							<!-- Es el máximo número de registros por pagina que serán mostrados. -->
+	    <MAXIMO_PAGINAS 	replicable='false'>20</MAXIMO_PAGINAS>								<!-- Es el máximo número de paginas que serán mostradas. -->
+	    <RUTA_BASE_DIR_ARQ 	replicable='false'>C:\arquitecturaAgave\DistV1</RUTA_BASE_DIR_ARQ>	<!-- Es la ruta base en la cual debera estar el primer directorio de la arquitectura -->
+	</cmpConfiguracion>
+	
+	<cmpLogging id="2" activo="true" init="true" class="mx.isban.agave.logging.Logging">
+    <MODE_LOG replicable="true">CONSOLE</MODE_LOG>
+    <PATH_LOG replicable="true">C:\arquitecturaAgave\DistV1/temp/cmpLogging/log/aplicacionBase.log</PATH_LOG>
+    <LEVEL_LOG replicable="true">TRACE</LEVEL_LOG>
+    <DB_LOGGING replicable="true">FALSE</DB_LOGGING>
+    <CAMPO_FILTRO replicable="true"/>
+    <FILTRO replicable="true"/>
+    <ID_CANAL replicable="true"/>
+    <SHOW_WORK_THREAD replicable="true">FALSE</SHOW_WORK_THREAD>
+  </cmpLogging>
+	
+</componentes>

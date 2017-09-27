@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appdeployment:Deployment xmi:version="2.0"
+	xmlns:xmi="http://www.omg.org/XMI"
+	xmlns:appdeployment="http://www.ibm.com/websphere/appserver/schemas/5.0/appdeployment.xmi"
+	xmi:id="Deployment_1467761593530">
+	<deployedObject xmi:type="appdeployment:ApplicationDeployment"
+		xmi:id="ApplicationDeployment_1467761593530" startingWeight="10">
+		<classloader xmi:id="Classloader_1467761593530" mode="PARENT_FIRST">
+			<libraries xmi:id="LibraryRef_1467761593530" libraryName="ComunesDistV1" />
+			<libraries xmi:id="LibraryRef_1467761593531" libraryName="SharedCoreDistV1" />
+			<libraries xmi:id="LibraryRef_1467761593532" libraryName="SharedExtDistV1" />
+			<libraries xmi:id="LibraryRef_1473360604789" libraryName="SharedSpringDistV1" />
+    </classloader>
+  </deployedObject>
+</appdeployment:Deployment>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<componentes>
+
+    <cmpConfiguracion id="1" activo="true">
+        <MODO                       replicable="false">local</MODO>
+        <SERVIDOR                   replicable="false">ServerName</SERVIDOR>
+        <ID_CONFIG_APP              replicable="false">IdConfigejemplo01EJB</ID_CONFIG_APP>
+        <REF_ID_APP                 replicable="false">IdConfigejemplo01EJB</REF_ID_APP>
+        <NOMBRE_APLICACION          replicable="false">IdConfigejemplo01EJB</NOMBRE_APLICACION>
+        <MAXIMO_REGISTROS           replicable="false">1000</MAXIMO_REGISTROS>
+        <REGISTROS_PAGINA           replicable="false">50</REGISTROS_PAGINA>
+        <MAXIMO_PAGINAS             replicable="false">20</MAXIMO_PAGINAS>
+        <RUTA_BASE_DIR_ARQ          replicable="false">C:\arquitecturaAgave\DistV1</RUTA_BASE_DIR_ARQ>
+    </cmpConfiguracion>
+
+    <cmpLogging id="2" activo="true" init="true" class="mx.isban.agave.logging.Logging">
+        <MODE_LOG           replicable="true">CONSOLE</MODE_LOG>
+        <PATH_LOG           replicable="true">C:\arquitecturaAgave\DistV1/temp/cmpLogging/log/aplicacionBase.log</PATH_LOG>
+        <LEVEL_LOG          replicable="true">TRACE</LEVEL_LOG>
+        <DB_LOGGING         replicable="true">FALSE</DB_LOGGING>
+        <CAMPO_FILTRO       replicable="true" />
+        <FILTRO             replicable="true" />
+        <ID_CANAL           replicable="true" />
+        <SHOW_WORK_THREAD   replicable="true">FALSE</SHOW_WORK_THREAD>
+    </cmpLogging>
+
+    <!-- Sample IDA configuration -->
+    
+    <IsbanDataAccess id="3" activo="true" init="true" class="mx.isban.agave.dataaccess.DataAccess">
+        <GENERAL.ID_DEFAULT_CONFIGURATION_CICS                  replicable="false"></GENERAL.ID_DEFAULT_CONFIGURATION_CICS>
+        <GENERAL.ID_DEFAULT_CONFIGURATION_PARTENON              replicable='false'></GENERAL.ID_DEFAULT_CONFIGURATION_PARTENON>
+        <GENERAL.FACTORIES_REFERENCE                            replicable="false">DATABASE.beca</GENERAL.FACTORIES_REFERENCE>		<!-- CONFIGURACION**** DATABASE.[nombre de la base]@ podemos repetir si hay mas bases de datos -->
+        <GENERAL.PROFILE_MODE                                   replicable="false">OFF</GENERAL.PROFILE_MODE>
+        <GENERAL.SIMUALATION_MODE                               replicable="false">OFF</GENERAL.SIMUALATION_MODE>
+        <GENERAL.STRESS_MODE                                    replicable="false">OFF</GENERAL.STRESS_MODE>
+        <GENERAL.PATH_PROFILE                                   replicable="false">C:/arquitecturaAgave/temp/cmpIsbanDataAccess/profiles/</GENERAL.PATH_PROFILE>
+        <GENERAL.TRACE_ACTIVO                                   replicable="false">ON</GENERAL.TRACE_ACTIVO>
+        <GENERAL.LOG_FILE                                       replicable="false">cmpIsbanDataAccess.log</GENERAL.LOG_FILE>
+        <GENERAL.LOG_PATH                                       replicable="false">C:/arquitecturaAgave/temp/cmpIsbanDataAccess/log/</GENERAL.LOG_PATH>
+        <GENERAL.LOG_LEVEL                                      replicable="false">DEBUG</GENERAL.LOG_LEVEL>
+        <GENERAL.SECURITY_KEY                                   replicable="false" />
+
+        <DATABASE.beca.FACTORY_CLASS_NAME 						replicable="false">mx.isban.agave.dataaccess.factories.jms.FactoryJMS</DATABASE.beca.FACTORY_CLASS_NAME>
+        <DATABASE.beca.JDNI_TYPE__CONECTION 					replicable="false">DATASOURCE</DATABASE.beca.JDNI_TYPE__CONECTION>
+        <DATABASE.beca.JDBC_DRIVER 								replicable="false"></DATABASE.beca.JDBC_DRIVER>
+        <DATABASE.beca.JDBC_URL 								replicable="false">beca</DATABASE.beca.JDBC_URL>
+        <DATABASE.beca.JDBC_USE_WALLET 							replicable="false">FALSE</DATABASE.beca.JDBC_USE_WALLET>
+        <DATABASE.beca.JDBC_USR 								replicable="false"></DATABASE.beca.JDBC_USR>
+        <DATABASE.beca.JDBC_PWD	 								replicable="false"></DATABASE.beca.JDBC_PWD>
+        <DATABASE.beca.TIMEOUT 									replicable="false">10</DATABASE.beca.TIMEOUT>
+        <DATABASE.beca.ENCODING 								replicable="false">UTF-8</DATABASE.beca.ENCODING>
+		<!-- REMPLAZAMOS ES PREFIJO PARA QUE COINCIDA CON LA CONFIGURACION -->
+		
+		<!--	PODEMOS ELIMINAR TODO ESTO **************** 
+        <PARTENON.CANAL_PARTENON.FACTORY_CLASS_NAME             replicable='false'>mx.isban.agave.dataaccess.factories.partenon.FactoryPartenon</PARTENON.CANAL_PARTENON.FACTORY_CLASS_NAME>
+        <PARTENON.CANAL_PARTENON.JNDI_CONNECTION_FACTORY        replicable='false'>eis/trxop_06_04</PARTENON.CANAL_PARTENON.JNDI_CONNECTION_FACTORY>
+        <PARTENON.CANAL_PARTENON.PARAM_DEFAULT_EMPRESA          replicable='false'></PARTENON.CANAL_PARTENON.PARAM_DEFAULT_EMPRESA>
+        <PARTENON.CANAL_PARTENON.PARAM_DEFAULT_CENTRO           replicable='false'></PARTENON.CANAL_PARTENON.PARAM_DEFAULT_CENTRO>
+        <PARTENON.CANAL_PARTENON.PARAM_DEFAULT_PUESTO_FISICO    replicable='false'></PARTENON.CANAL_PARTENON.PARAM_DEFAULT_PUESTO_FISICO>
+        <PARTENON.CANAL_PARTENON.PARAM_DEFAULT_TIPO_TERMINAL    replicable='false'></PARTENON.CANAL_PARTENON.PARAM_DEFAULT_TIPO_TERMINAL>
+        <PARTENON.CANAL_PARTENON.PARAM_DEFAULT_IDIOMA           replicable='false'></PARTENON.CANAL_PARTENON.PARAM_DEFAULT_IDIOMA>
+        <PARTENON.CANAL_PARTENON.PARAM_DEFAULT_CANAL_FISICO     replicable='false'></PARTENON.CANAL_PARTENON.PARAM_DEFAULT_CANAL_FISICO>
+        <PARTENON.CANAL_PARTENON.PARAM_DEFAULT_CANAL_LOGICO     replicable='false'></PARTENON.CANAL_PARTENON.PARAM_DEFAULT_CANAL_LOGICO>
+        -->
+    </IsbanDataAccess>
+     
+</componentes>

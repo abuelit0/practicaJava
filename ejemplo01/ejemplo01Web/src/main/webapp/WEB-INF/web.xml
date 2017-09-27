@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>ejemplo01</display-name>
+	<welcome-file-list>
+		<welcome-file>/principal/inicio.do</welcome-file>
+	</welcome-file-list>
+	<context-param>
+		<param-name>IdConfigApp</param-name>
+		<param-value>IdConfigejemplo01WEB</param-value>
+	</context-param>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+					 /WEB-INF/i18n.xml
+					 /WEB-INF/ApplicationContext.xml
+					 /WEB-INF/spring-security.xml
+					 /WEB-INF-DispacherEjemplo-servlet.xml
+		</param-value>
+	</context-param>
+	<!-- Este parámetro es la página de error externa que se seguirá en caso de errores de seguridad  -->
+	<context-param>
+		<param-name>ErrorPageRedirect</param-name>
+		<param-value>https://enlace.santander-serfin.com/?SecError</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>mx.isban.agave.configuracion.ListenerConfig</listener-class>
+	</listener>
+	
+	<!-- Configuración de Seguridad --> 
+	<filter>
+		<filter-name>SecurityFilter</filter-name>
+		<filter-class>mx.isban.security.components.SecOutputFilter</filter-class>
+		<!-- Este parámetro debe estar a true en ambiente productivo  
+		<init-param>
+			<param-name>requireSSL</param-name> 			
+				<param-value>false</param-value>
+		</init-param>-->
+		<init-param>
+		<!-- Redirección de error externa para reflejar error de seguridad -->
+			<param-name>RegExpRedirect</param-name>
+			<param-value>https://enlace.santander-serfin.com</param-value>
+		</init-param>
+		<!-- Este parámetro indica desde donde se permitirán frames, por default no se permiten 
+		<init-param>
+			<param-name>xframe</param-name>
+			<param-value>SAMEORIGIN</param-value>
+		</init-param> -->
+		<init-param>
+			<param-name>allowedMethods</param-name>
+			<param-value>GET|POST</param-value>
+		</init-param>
+		<!-- Protección de: XSS-Protection, X-Frame-Options, Cache-Control 
+		<init-param>
+			<param-name>securityDisabled</param-name>
+			<param-value>false,false,false</param-value>
+		</init-param>-->
+	</filter>
+	<filter-mapping>
+		<filter-name>SecurityFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>SSOFilter</filter-name>
+		<filter-class>mx.isban.security.filterng.IsbSecurityFilter</filter-class>
+		<init-param>
+			<param-name>worker</param-name>
+			<param-value>mx.isban.security.filterng.utils.DummyWorker</param-value>
+		</init-param>
+		<init-param>
+			<param-name>URLErrorValidacion</param-name>
+			<param-value>http://URLDeErrorFueraEnsamblado</param-value>
+		</init-param>
+		
+		<init-param>
+			<param-name>ivGroups</param-name>
+			<param-value>BET</param-value>
+		</init-param>
+		<init-param>
+			<param-name>domain</param-name>
+			<param-value>localhost</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>SSOFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class>
+			org.springframework.web.filter.DelegatingFilterProxy
+		</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>ERROR</dispatcher>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	
+	<!-- Dispatcher Spring -->
+	<servlet>
+		<servlet-name>DispatcherPrincipal</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DispatcherPrincipal</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+</web-app>

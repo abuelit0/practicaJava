@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>mx.isban.ejemplo</groupId>
+	<artifactId>ejemplo01</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>ArquitecturaAgave ejemplo01</name>
+
+	<properties>
+		<!-- Explicitly declaring the source encoding eliminates the following 
+			message: -->
+		<!-- [WARNING] Using platform encoding (UTF-8 actually) to copy filtered 
+			resources, i.e. build is platform dependent! -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<project.version>1.0-SNAPSHOT</project.version>
+		<agave.version>1.1.0</agave.version>
+		<agave.cmpCache.version>1.1.1</agave.cmpCache.version>
+		<agave.cmpInterceptors.version>1.1.1</agave.cmpInterceptors.version>
+		
+		<agave.ida.version>1.11.0</agave.ida.version>
+		<agave.ida.cmpChannelCics.version>1.11.1</agave.ida.cmpChannelCics.version>
+		<agave.ida.cmpChannelPartenon.version>1.11.1</agave.ida.cmpChannelPartenon.version>
+		<agave.ida.cmpIsbanDataAccess.version>1.11.1</agave.ida.cmpIsbanDataAccess.version>
+
+		<!-- other plugin versions -->
+		<version.compiler.plugin>3.1</version.compiler.plugin>
+		<version.ear.plugin>2.10</version.ear.plugin>
+		<version.ejb.plugin>2.3</version.ejb.plugin>
+		<version.surefire.plugin>2.16</version.surefire.plugin>
+		<version.war.plugin>2.5</version.war.plugin>
+
+		<!-- maven-compiler-plugin -->
+		<maven.compiler.target>1.7</maven.compiler.target>
+		<maven.compiler.source>1.7</maven.compiler.source>
+	</properties>
+	<dependencyManagement>
+		<dependencies>
+
+			<!-- Define the version of the EJB jar so that we don't need to repeat 
+				ourselves in every module -->
+			
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>3.8.1</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+  <modules>
+    <module>ejemplo01Web</module>
+    <module>ejemplo01EJB</module>
+    <module>ejemplo01Cliente</module>
+    <module>ejemplo01EJBWeb</module>
+    <module>ejemplo01EAREJB</module>
+    <module>ejemplo01EARWeb</module>
+    <module>Configuracionejemplo01</module>
+  </modules>
+</project>
